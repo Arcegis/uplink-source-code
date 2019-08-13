@@ -17,7 +17,7 @@
 
                                                                  // Now directly defined in the build configuration
                                                                  // SELECT ONE OF THESE THREE
-//#define     FULLGAME                                           // The finished, complete game for CD distribution
+#define     FULLGAME                                           // The finished, complete game for CD distribution
 //#define     DEMOGAME                                           // Limit rating, stop story progression
 //#define     TESTGAME                                           // An internal build, with disabled start sequence
 
@@ -25,8 +25,8 @@
 #error "One of FULLGAME DEMOGAME or TESTGAME must be defined"
 #endif
 
-#define     VERSION_NUMBER_INT      "10.0"                       // Only the 2 first digit after the . are effective
-#define     VERSION_NAME_INT        "RELEASE"
+#define     VERSION_NUMBER_INT      "1.60"                       // Only the 2 first digit after the . are effective
+#define     VERSION_NAME_INT        "ARCEGIS_DIFFICULTY"
 
 #if defined(DEMOGAME)
 #define     VERSION_NUMBER          VERSION_NUMBER_INT "DEMO"

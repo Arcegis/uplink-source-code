@@ -23,8 +23,8 @@
 
 	*/
 
-#define		WORLD_START_DATE				0, 0, 0, 24, 2, 2010	
-#define		GAME_START_DATE					0, 0, 0, 24, 3, 2010	// ;)
+#define		WORLD_START_DATE				0, 0, 0, 23, 7, 2019	
+#define		GAME_START_DATE					0, 0, 0, 23, 8, 2019	// ;)
 
 
 #define		COMPANYSIZE_AVERAGE				20
@@ -43,15 +43,15 @@
 	*/
 
 
-#define		PLAYER_START_BALANCE			3000
-#define		PLAYER_START_CREDITRATING		10
+#define		PLAYER_START_BALANCE			10000
+#define		PLAYER_START_CREDITRATING		0
 #define		PLAYER_START_UPLINKRATING		0
 #define		PLAYER_START_NEUROMANCERRATING  5
 
 #define		PLAYER_START_GATEWAYNAME		"Gateway ALPHA       "
 #define		PLAYER_START_CPUTYPE			"CPU ( 60 Ghz )"
-#define		PLAYER_START_MODEMSPEED			1
-#define		PLAYER_START_MEMORYSIZE			24
+#define		PLAYER_START_MODEMSPEED			4
+#define		PLAYER_START_MEMORYSIZE			32
 
 
 /*	===========================================================================
@@ -62,10 +62,10 @@
 	*/
 
 
-#define		NUM_STARTING_COMPANIES			30
+#define		NUM_STARTING_COMPANIES			100
 #define		NUM_STARTING_BANKS				7
 #define		NUM_STARTING_PEOPLE				50
-#define		NUM_STARTING_AGENTS				30
+#define		NUM_STARTING_AGENTS				100
 #define		NUM_STARTING_MISSIONS			20
 
 #define		NUM_STARTING_PHOTOS				20
@@ -85,27 +85,27 @@
 	*/
 
 
-#define		TICKSREQUIRED_COPY				45
-#define		TICKSREQUIRED_DELETE			9
-#define		TICKSREQUIRED_DECRYPT			90
-#define		TICKSREQUIRED_DEFRAG			3					// (Per memory slot)
-#define		TICKSREQUIRED_DICTIONARYHACKER	0.2f				// (Num ticks required to test 1 word)
-#define		TICKSREQUIRED_LOGDELETER		60					// (for entire log)
-#define		TICKSREQUIRED_LOGUNDELETER		60					// (for entire log)
-#define		TICKSREQUIRED_LOGMODIFIER		50					// (for entire log)
-#define		TICKSREQUIRED_ANALYSEPROXY		50
-#define		TICKSREQUIRED_DISABLEPROXY		100
-#define		TICKSREQUIRED_ANALYSEFIREWALL	40
-#define		TICKSREQUIRED_DISABLEFIREWALL	80
-#define		TICKSREQUIRED_BYPASSCYPHER		0.1					// (Per element in a widthXheight element array)
-#define		TICKSREQUIRED_SCANLANSYSTEM		70					// (To scan one LAN system)
-#define		TICKSREQUIRED_SCANLANLINKS		100					// (For all 1024 ports to be scanned)
-#define		TICKSREQUIRED_SPOOFLANSYSTEM	100					
-#define     TICKSREQUIRED_FORCELANLOCK      100
-#define		TICKSREQUIRED_LANSCAN			300					// (To scan all LAN systems)
+#define		TICKSREQUIRED_COPY				20
+#define		TICKSREQUIRED_DELETE			2
+#define		TICKSREQUIRED_DECRYPT			60
+#define		TICKSREQUIRED_DEFRAG			1					// (Per memory slot)
+#define		TICKSREQUIRED_DICTIONARYHACKER	0.05f				// (Num ticks required to test 1 word)
+#define		TICKSREQUIRED_LOGDELETER		30					// (for entire log)
+#define		TICKSREQUIRED_LOGUNDELETER		30					// (for entire log)
+#define		TICKSREQUIRED_LOGMODIFIER		25					// (for entire log)
+#define		TICKSREQUIRED_ANALYSEPROXY		25
+#define		TICKSREQUIRED_DISABLEPROXY		50
+#define		TICKSREQUIRED_ANALYSEFIREWALL	20
+#define		TICKSREQUIRED_DISABLEFIREWALL	40
+#define		TICKSREQUIRED_BYPASSCYPHER		0.025					// (Per element in a widthXheight element array)
+#define		TICKSREQUIRED_SCANLANSYSTEM		30					// (To scan one LAN system)
+#define		TICKSREQUIRED_SCANLANLINKS		50					// (For all 1024 ports to be scanned)
+#define		TICKSREQUIRED_SPOOFLANSYSTEM	50					
+#define     TICKSREQUIRED_FORCELANLOCK      50
+#define		TICKSREQUIRED_LANSCAN			100					// (To scan all LAN systems)
 
-#define     TIMEREQUIRED_DELETEONELOG           300             // Used in ConsoleScreen
-#define     TIMEREQUIRED_DELETEONEGIGAQUAD      150             //
+#define     TIMEREQUIRED_DELETEONELOG           100             // Used in ConsoleScreen
+#define     TIMEREQUIRED_DELETEONEGIGAQUAD      60             //
 
 
 /*	===========================================================================
@@ -118,34 +118,34 @@
 
 	*/
 
-#define		TRACESPEED_VARIANCE							0.1				//(ie 10%)
+#define		TRACESPEED_VARIANCE							0.05				//(ie 10%)
 
 #define		TRACESPEED_PUBLICACCESSSERVER				-1
-#define		TRACESPEED_INTERNALSERVICESMACHINE			15
-#define		TRACESPEED_CENTRALMAINFRAME					5
-#define		TRACESPEED_PUBLICBANKSERVER					5
-#define     TRACESPEED_LAN                              5
+#define		TRACESPEED_INTERNALSERVICESMACHINE			30
+#define		TRACESPEED_CENTRALMAINFRAME					10
+#define		TRACESPEED_PUBLICBANKSERVER					10
+#define     TRACESPEED_LAN                              10
 
-#define		TRACESPEED_UPLINK_INTERNALSERVICESMACHINE	5
-#define		TRACESPEED_UPLINK_TESTMACHINE				30
+#define		TRACESPEED_UPLINK_INTERNALSERVICESMACHINE	10
+#define		TRACESPEED_UPLINK_TESTMACHINE				75
 #define		TRACESPEED_UPLINK_PUBLICACCESSSERVER		-1
 
-#define		TRACESPEED_GLOBALCRIMINALDATABASE					10
-#define		TRACESPEED_INTERNATIONALSOCIALSECURITYDATABASE		15
-#define		TRACESPEED_CENTRALMEDICALDATABASE					25
-#define		TRACESPEED_GLOBALINTELLIGENCEAGENCY					5
-#define		TRACESPEED_INTERNATIONALACADEMICDATABASE			35
-#define		TRACESPEED_INTERNIC									15
-#define		TRACESPEED_STOCKMARKET								20
-#define		TRACESPEED_PROTOVISION								30
+#define		TRACESPEED_GLOBALCRIMINALDATABASE					30
+#define		TRACESPEED_INTERNATIONALSOCIALSECURITYDATABASE		40
+#define		TRACESPEED_CENTRALMEDICALDATABASE					50
+#define		TRACESPEED_GLOBALINTELLIGENCEAGENCY					10
+#define		TRACESPEED_INTERNATIONALACADEMICDATABASE			50
+#define		TRACESPEED_INTERNIC									30
+#define		TRACESPEED_STOCKMARKET								40
+#define		TRACESPEED_PROTOVISION								50
 
 
 
-#define     TRACESPEED_MODIFIER_NOACCOUNT               0.1              // Player does not have an account on bounce system
-#define     TRACESPEED_MODIFIER_HASACCOUNT              0.7              // Player has an account on the bounce system
-#define     TRACESPEED_MODIFIER_ADMINACCESS             1.0              // Player has admin access on bounce system
-#define     TRACESPEED_MODIFIER_CENTRALMAINFRAME        1.3              // Player is routing through a central mainframe
-#define     TRACESPEED_MODIFIER_PUBLICBANKSERVERADMIN   1.6              // Player has routing through a bank with admin        
+#define     TRACESPEED_MODIFIER_NOACCOUNT               0.3              // Player does not have an account on bounce system
+#define     TRACESPEED_MODIFIER_HASACCOUNT              1.2              // Player has an account on the bounce system
+#define     TRACESPEED_MODIFIER_ADMINACCESS             2.0              // Player has admin access on bounce system
+#define     TRACESPEED_MODIFIER_CENTRALMAINFRAME        2.6              // Player is routing through a central mainframe
+#define     TRACESPEED_MODIFIER_PUBLICBANKSERVERADMIN   3.2              // Player has routing through a bank with admin        
 
 
 /*  ===========================================================================
@@ -159,32 +159,32 @@
 
 #define		HACKDIFFICULTY_VARIANCE							0.15		//(ie 15%)
  
-#define		HACKDIFFICULTY_PUBLICACCESSSERVER				6
-#define		HACKDIFFICULTY_INTERNALSERVICESMACHINE			45
-#define		HACKDIFFICULTY_CENTRALMAINFRAME					80
-#define		HACKDIFFICULTY_PUBLICBANKSERVER					100
-#define		HACKDIFFICULTY_PUBLICBANKSERVER_ADMIN			300
-#define		HACKDIFFICULTY_LOCALMACHINE						20
+#define		HACKDIFFICULTY_PUBLICACCESSSERVER				3
+#define		HACKDIFFICULTY_INTERNALSERVICESMACHINE			30
+#define		HACKDIFFICULTY_CENTRALMAINFRAME					40
+#define		HACKDIFFICULTY_PUBLICBANKSERVER					50
+#define		HACKDIFFICULTY_PUBLICBANKSERVER_ADMIN			150
+#define		HACKDIFFICULTY_LOCALMACHINE						10
 
-#define     HACKDIFFICULTY_LANTERMINAL                      75
-#define     HACKDIFFICULTY_LANAUTHENTICATIONSERVER          150
-#define     HACKDIFFICULTY_LANLOGSERVER                     300
-#define     HACKDIFFICULTY_LANMODEM                         200
-#define     HACKDIFFICULTY_LANMAINSERVER                    500
+#define     HACKDIFFICULTY_LANTERMINAL                      30
+#define     HACKDIFFICULTY_LANAUTHENTICATIONSERVER          70
+#define     HACKDIFFICULTY_LANLOGSERVER                     150
+#define     HACKDIFFICULTY_LANMODEM                         100
+#define     HACKDIFFICULTY_LANMAINSERVER                    200
 
-#define		HACKDIFFICULTY_UPLINK_INTERNALSERVICESMACHINE	300
-#define		HACKDIFFICULTY_UPLINK_TESTMACHINE				30
-#define		HACKDIFFICULTY_UPLINK_PUBLICACCESSSERVER		30
+#define		HACKDIFFICULTY_UPLINK_INTERNALSERVICESMACHINE	150
+#define		HACKDIFFICULTY_UPLINK_TESTMACHINE				15
+#define		HACKDIFFICULTY_UPLINK_PUBLICACCESSSERVER		15
 
-#define     HACKDIFFICULTY_ARCCENTRALMAINFRAME                      600
-#define     HACKDIFFICULTY_ARUNMORCENTRALMAINFRAME                  600
-#define		HACKDIFFICULTY_GLOBALCRIMINALDATABASE					180
-#define		HACKDIFFICULTY_INTERNATIONALSOCIALSECURITYDATABASE		120
-#define		HACKDIFFICULTY_CENTRALMEDICALDATABASE					120
-#define		HACKDIFFICULTY_GLOBALINTELLIGENCEAGENCY					450
-#define		HACKDIFFICULTY_INTERNATIONALACADEMICDATABASE			90
-#define		HACKDIFFICULTY_INTERNIC									70
-#define		HACKDIFFICULTY_STOCKMARKET								120
+#define     HACKDIFFICULTY_ARCCENTRALMAINFRAME                      300
+#define     HACKDIFFICULTY_ARUNMORCENTRALMAINFRAME                  300
+#define		HACKDIFFICULTY_GLOBALCRIMINALDATABASE					80
+#define		HACKDIFFICULTY_INTERNATIONALSOCIALSECURITYDATABASE		60
+#define		HACKDIFFICULTY_CENTRALMEDICALDATABASE					60
+#define		HACKDIFFICULTY_GLOBALINTELLIGENCEAGENCY					200
+#define		HACKDIFFICULTY_INTERNATIONALACADEMICDATABASE			60
+#define		HACKDIFFICULTY_INTERNIC									30
+#define		HACKDIFFICULTY_STOCKMARKET								60
 #define		HACKDIFFICULTY_PROTOVISION								-1                  // Unhackable
 
 
@@ -248,25 +248,25 @@ const int PROB_MISSION_TRACEUSER []         =          {  0,  0,  0,  0,  0,  0,
 
 #define		PAYMENT_MISSION_VARIANCE					0.3				// ie 30% of payment
 
-#define		PAYMENT_MISSION_STEALFILE					900
+#define		PAYMENT_MISSION_STEALFILE					1200
 #define		PAYMENT_MISSION_STEALALLFILES				1500
-#define		PAYMENT_MISSION_DESTROYFILE					800
-#define		PAYMENT_MISSION_DESTROYALLFILES				1400
+#define		PAYMENT_MISSION_DESTROYFILE					1200
+#define		PAYMENT_MISSION_DESTROYALLFILES				1800
 
-#define		PAYMENT_MISSION_FINDDATA					1000
-#define		PAYMENT_MISSION_FINDDATA_FINANCIAL			1200
+#define		PAYMENT_MISSION_FINDDATA					1800
+#define		PAYMENT_MISSION_FINDDATA_FINANCIAL			2000
 
-#define		PAYMENT_MISSION_CHANGEDATA					1000
-#define		PAYMENT_MISSION_CHANGEDATA_ACADEMIC			1000
-#define		PAYMENT_MISSION_CHANGEDATA_SOCIAL			1200
-#define		PAYMENT_MISSION_CHANGEDATA_CRIMINAL			1500
+#define		PAYMENT_MISSION_CHANGEDATA					1500
+#define		PAYMENT_MISSION_CHANGEDATA_ACADEMIC			1500
+#define		PAYMENT_MISSION_CHANGEDATA_SOCIAL			1800
+#define		PAYMENT_MISSION_CHANGEDATA_CRIMINAL			2200
 
-#define		PAYMENT_MISSION_FRAMEUSER					2200
-#define		PAYMENT_MISSION_TRACEUSER					1800
-#define		PAYMENT_MISSION_CHANGEACCOUNT				1700
-#define		PAYMENT_MISSION_REMOVECOMPUTER				1600
-#define		PAYMENT_MISSION_REMOVECOMPANY				2000
-#define		PAYMENT_MISSION_REMOVEUSER					1900
+#define		PAYMENT_MISSION_FRAMEUSER					2700
+#define		PAYMENT_MISSION_TRACEUSER					2400
+#define		PAYMENT_MISSION_CHANGEACCOUNT				2500
+#define		PAYMENT_MISSION_REMOVECOMPUTER				2300
+#define		PAYMENT_MISSION_REMOVECOMPANY				3000
+#define		PAYMENT_MISSION_REMOVEUSER					2900
 
 
 /*
@@ -359,32 +359,32 @@ const int PROB_MISSION_TRACEUSER []         =          {  0,  0,  0,  0,  0,  0,
 #define		DAYS								* 24 HOURS
 
 
-#define		TIME_TOPAYLEGALFINE					7 DAYS								// You must pay before this time or face legal action
+#define		TIME_TOPAYLEGALFINE					14 DAYS								// You must pay before this time or face legal action
 
-#define		TIME_LEGALACTION					3 HOURS								// They come to arrest you after this time
-#define		TIME_LEGALACTION_WARNING			2 MINUTES							// You are given warning this many minutes before hand
+#define		TIME_LEGALACTION					12 HOURS								// They come to arrest you after this time
+#define		TIME_LEGALACTION_WARNING			5 MINUTES							// You are given warning this many minutes before hand
 
-#define		TIME_TACTICALACTION					5 MINUTES							// They send in the heavies to pick you up.  Nasty.
-#define		TIME_TACTICALACTION_WARNING			1 MINUTES							// You hear them at the door
+#define		TIME_TACTICALACTION					20 MINUTES							// They send in the heavies to pick you up.  Nasty.
+#define		TIME_TACTICALACTION_WARNING			5 MINUTES							// You hear them at the door
 
-#define		TIME_TOINSTALLHARDWARE				14 HOURS							// Time for engineer to visit your gateway
+#define		TIME_TOINSTALLHARDWARE				6 HOURS							// Time for engineer to visit your gateway
 #define		TIME_TOINSTALLHARDWARE_WARNING		30 MINUTES							// He mails you 30 minutes before finishing.
-#define		TIME_TOCHANGEGATEWAY				24 HOURS							// No warnings.  New gateway is now ready.
+#define		TIME_TOCHANGEGATEWAY				12 HOURS							// No warnings.  New gateway is now ready.
 
-#define		TIME_TOEXPIRELOGS					40 DAYS								// After this time logs will be deleted
-#define		TIME_TOEXPIRENEWS					30 DAYS								// After this time news will be deleted
+#define		TIME_TOEXPIRELOGS					10 DAYS								// After this time logs will be deleted
+#define		TIME_TOEXPIRENEWS					10 DAYS								// After this time news will be deleted
 #define		TIME_TOEXPIREMISSIONS				30 DAYS								// After this time mission will be withdrawn
 
 #define     TIME_TODEMOGAMEOVER                 0 MINUTES                           // Player gets this long AFTER reaching the max demo rating
 
-#define     TIME_TOCOVERBANKROBBERY             2 MINUTES                           // Player has this long to cover his tracks
+#define     TIME_TOCOVERBANKROBBERY             20 MINUTES                           // Player has this long to cover his tracks
 
 #define     TIME_REVELATIONREPRODUCE            3 MINUTES                           // Doubles in size this often
 #define     TIME_ARCBUSTED_WITHPLAYER           15 MINUTES                          // Player has this long to plant Revelation
 #define     TIME_ARCBUSTED_WITHOUTPLAYER        10 MINUTES                          // Player must defend against Revelation for this long
 
-#define		FREQUENCY_GENERATENEWMISSION		12 HOURS
-#define		FREQUENCY_CHECKFORSECURITYBREACHES	8 HOURS
+#define		FREQUENCY_GENERATENEWMISSION		8 HOURS
+#define		FREQUENCY_CHECKFORSECURITYBREACHES	20 HOURS
 #define		FREQUENCY_CHECKMISSIONDUEDATES		1 DAYS
 #define		FREQUENCY_GIVEMISSIONTONPC			8 HOURS
 #define		FREQUENCY_EXPIREOLDSTUFF			7 DAYS
@@ -427,8 +427,8 @@ const ComputerUpgrade *GetHardwareUpgrade ( char *name );
   */
 
 
-#define		COST_UPLINK_PERMONTH			300
-#define		COST_UPLINK_NEWGATEWAY			1000
+#define		COST_UPLINK_PERMONTH			100
+#define		COST_UPLINK_NEWGATEWAY			500
 
 #define		GATEWAY_PARTEXCHANGEVALUE		0.75				// Percentage of purchase value
 
@@ -507,13 +507,13 @@ extern const int  NEUROMANCERCHANGE [];							// One int for each mission type -
 
 
 #define		IP_LOCALHOST						"127.0.0.1"
-#define		IP_INTERNIC							"458.615.48.651"
+#define		IP_INTERNIC							"493.702.151.806"
 #define		IP_ACADEMICDATABASE					"443.65.765.2"
 #define		IP_GLOBALCRIMINALDATABASE			"785.234.87.124"
 #define		IP_SOCIALSECURITYDATABASE			"653.76.235.432"
 #define		IP_CENTRALMEDICALDATABASE			"432.543.12.544"
 #define		IP_STOCKMARKETSYSTEM				"456.789.159.459"
-#define     IP_PROTOVISION                      "284.345.42.283"
+#define     IP_PROTOVISION                      "249.493.245.26"
 #define     IP_OCP                              "265.125.767.1"
 #define     IP_SJGAMES                          "849.23.459.24"
 #define     IP_INTROVERSION                     "128.128.128.128"
